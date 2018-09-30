@@ -40,6 +40,7 @@ matrix:
       osx_image: xcode8.3
       before_script:
         - brew reinstall python@2
+        - export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
         - pip install six
         - brew update
         - brew install --HEAD libimobiledevice
